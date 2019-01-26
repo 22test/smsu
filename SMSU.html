@@ -1,0 +1,104 @@
+
+<head>
+	<title>Show me something useful</title>
+	<link rel="favicon" type="image/icon" href="icon.ico">
+</head>
+
+
+<style>
+
+/*Long process*/
+
+#grad {
+	margin-top: -54px;
+	height: 100%;
+	background-color: gray;
+	background-image: linear-gradient(45deg, #232323, #b2ccd2);
+}
+
+html {
+overflow-y:hidden; 
+overflow-x: hidden;
+}
+
+body {
+margin: 0;
+height: 100%;
+width: 100%;
+}
+
+[name=web]{
+display: none;
+}
+
+[name=web0]{
+display: none;
+}
+
+.btn1 {
+	background-color: buttonface;
+	padding: 12px;
+	border: 1px solid black;
+	position:absolute;
+	margin-top: 450px;
+	margin-left: 630px;
+	/*To change the cursor*/
+	cursor: url("cursor.cur"), default;
+}
+
+.btn2 {
+	background-color: buttonface;
+	padding: 12px;
+	border: 1px solid black;
+	/*To change the cursor*/
+	cursor: url("cursor.cur"), default;
+}
+
+.btn1:hover {
+	background-color: #A9A9A9;
+	color: white;
+}
+.btn2:hover {
+	background-color: #A9A9A9;
+	color: white;
+}
+
+.dis1{
+	margin-left: 540px;
+	margin-top: 520px;
+}
+
+.dis2{
+	margin-left: 570px;
+	margin-top: 550px;
+	}
+
+html, body {
+	/*To change the cursor*/
+	cursor: url("cursor.cur"), default;
+}
+</style>
+
+<!--Links-->
+<script type="text/javascript" src="..js"></script>
+
+<body>
+
+<button onClick="sendme()" id="web" style="display: none;"></button>
+<br>
+<br>
+<input type="radio" name="web" id="web0" onclick="location.href='web.txt'">
+
+<div class="back">
+	<!--Links being used for the Simple Html "Site"-->
+	<label class="btn1" for="web0">Websites Used</label>
+	<!--Multiple Links Button-->
+	<center><label class="btn2" for="web">Show me something Useful</label></center>
+</div>
+
+<p class="dis1" style="color: white; position: absolute;">Disclaimer "The sites used are not owned by me"</p>
+<p class="dis2" style="color: white; position: absolute;">© 2018 <a href="background button.html" style="text-decoration: none; color: black; cursor: url('cursor.cur'), default;">Show Me Something Useful</a></p>
+
+<div id="grad"></div>
+
+</body>
